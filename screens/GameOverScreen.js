@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button, Image } from 'react-native';
+import MainButton from '../components/MainButton';
 import Colors from '../constants/colors';
 import defaultStyles from '../constants/default-styles';
 
@@ -15,9 +16,12 @@ const GameOver = props => {
                     resizeMode="cover"
                 />
             </View>
-            <Text style={{...defaultStyles.bodyText, ...styles.text}}>The Computer took {props.rounds} tries to guess the number!</Text>
-            <Text style={{...defaultStyles.bodyText, ...styles.text}}>The Number was: {props.number}</Text>
-            <Button style={styles.button} title="Restart Game" onPress={props.onRestart} color={Colors.primary} />
+            <View style={styles.resultContainer}>
+                <Text style={{...defaultStyles.bodyText, ...styles.text}}>
+                    Your phone took <Text style={styles.highlight}>{props.rounds}</Text> rounds to guess the number <Text style={styles.highlight}>{props.number}</Text>!
+                </Text>
+            </View>
+            <MainButton style={styles.button} onPress={props.onRestart} color={Colors.primary}>New Game</MainButton>
         </View>
     )
 };
@@ -42,9 +46,19 @@ const styles = StyleSheet.create({
     },
     text: {
         marginVertical: 10,
+        textAlign: 'center',
+        fontSize: 20
     },
     button: {
         marginVertical: 10,
+    },
+    resultContainer: {
+        marginHorizontal: 30,
+        marginVertical: 15
+    },
+    highlight: {
+        color: Colors.primary,
+        fontFamily: 'open-sans-bold'
     }
 });
 
