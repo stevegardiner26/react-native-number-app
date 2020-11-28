@@ -15,5 +15,7 @@ Run the app and follow expo's instructions for running a local emulator or runni
 
 ### Game Flow
 
+![Home Screen](https://github.com/stevegardiner26/react-native-number-app/blob/master/home.jpg?raw=true)
+
 Available Icon List:
 https://icons.expo.fyi/
