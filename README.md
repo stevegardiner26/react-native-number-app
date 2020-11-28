@@ -13,5 +13,7 @@ Run the app and follow expo's instructions for running a local emulator or runni
 
     $ npm start
 
+### Game Flow
+
 Available Icon List:
 https://icons.expo.fyi/
