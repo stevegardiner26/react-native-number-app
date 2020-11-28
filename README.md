@@ -15,7 +15,22 @@ Run the app and follow expo's instructions for running a local emulator or runni
 
 ### Game Flow
 
-![Home Screen](https://github.com/stevegardiner26/react-native-number-app/blob/master/home.jpg?raw=true)
+#### Home Screen
+<img src="/assets/screenshots/home.jpg?raw=true" alt="Home Screen" width="200"/>
+
+#### Before Starting a Game
+<img src="/assets/screenshots/before_start.jpg?raw=true" alt="Home Screen" width="200"/>
+
+#### During the Game
+<img src="/assets/screenshots/guessing.jpg?raw=true" alt="Home Screen" width="200"/>
+
+#### Game Over Screen
+<img src="/assets/screenshots/game_over.jpg?raw=true" alt="Home Screen" width="200"/>
+
+#### Alert Message (If wrong +/- is chosen)
+<img src="/assets/screenshots/alert.jpg?raw=true" alt="Home Screen" width="200"/>
+
+### Resources
 
 Available Icon List:
 https://icons.expo.fyi/
